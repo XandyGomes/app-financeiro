@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-MinhasfinancasApplication<minhasfinancas>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "mainClass": "com.gomes.minhasfinancas.MinhasfinancasApplication",
+      "projectName": "minhasfinancas",
+      "args": ""
+    }
+  ]
+}
