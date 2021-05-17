@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from '../components/card'
 import FormGroup from '../components/form-group'
+import {withRouter} from 'react-router-dom'
 
 class CadastroUsuario extends React.Component{
   state = {
@@ -12,6 +13,10 @@ class CadastroUsuario extends React.Component{
   
   cadastrar = () =>{
     console.log(this.state)
+  }
+
+  cancelar = () =>{
+    this.props.history.push('/login')
   }
 
   render(){
@@ -53,8 +58,10 @@ class CadastroUsuario extends React.Component{
                         onChange={e => this.setState({senhaRepeticao: e.target.value})} />
                 </FormGroup>
 
-                    <button onClick={this.cadastrar} type="button" className="btn btn-success">Salvar</button>
-                    <button type="button" className="btn btn-danger">Voltar</button>
+                    <button onClick={this.cadastrar} type="button" className="btn btn-success">
+                      <i className="pi pi-save"></i> Salvar</button>
+                    <button onClick={this.cancelar} type="button" className="btn btn-danger">
+                      <i className="pi pi-times"></i> Voltar</button>
               </div>
             </div>
           </div>
@@ -63,4 +70,4 @@ class CadastroUsuario extends React.Component{
     )
   }
 }
-export default CadastroUsuario
+export default withRouter(CadastroUsuario)
