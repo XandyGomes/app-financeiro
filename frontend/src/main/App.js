@@ -5,6 +5,8 @@ import Navbar from '../components/navbar'
 import 'bootswatch/dist/flatly/bootstrap.css'
 import '../custom.css'
 import 'primeicons/primeicons.css'
+import 'toastr/build/toastr.min.js'
+import 'toastr/build/toastr.css'
 
 class App extends React.Component {
   render() {
