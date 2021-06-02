@@ -2,7 +2,7 @@ import React from 'react'
 import Login from '../views/login'
 import CadastroUsuario from '../views/cadastroUsuario'
 import Home from '../views/home'
-import ConsultaLancamentos from '../views/consulta_lancamentos'
+import ConsultaLancamentos from '../views/lancamentos/consulta_lancamentos'
 
 import {Route, Switch, HashRouter } from 'react-router-dom'
 
